@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 100%;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+#cabecalho{
+    background-color: #1a1f34;
+    
+}
+.menu-fixo{
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    transition: all .5s;
+    width: 100%;
+}
+#cabecalho img{
+    max-width: 234px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5%;
+}
+nav li{
+    list-style-type: none;
+    background-color: #9a0904;
+    text-align: center;
+    line-height: 30px;
+}
+
+nav ul{
+    position: relative;
+}
+li#home{
+   
+position: relative;
+    
+}
+li#icon{
+    display:inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 10%;
+    /*width: 100%;*/
+}
+nav ul.esconde li:not(:first-child){
+    display: none;
+}
+nav ul.mostra li:not(:first-child){
+    display: block;
+}
+
+nav li a, a{
+    color:white;
+    font-family: Gotham;
+    font-size: .94rem;
+    text-decoration: none;
+    display: block;
+}
+nav li a:hover{
+    color:#9a0904;
+    background-color: white;
+    transition: 1s; 
+}
+h2{
+    padding-top: 10%;
+    padding-bottom: 2%;
+    font-size: 1.69rem;
+    color: white;
+    font-family: Gotham;
+    text-align: center; 
+}
+#formulario{
+    background-image: url('de9awep-cbc1ce65-20cd-4294-9bf1-106e0d56eb1a.png');
+    background-color: #1a1f34;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+  
+}
+#formulario p{
+    color: white;
+    font-family: Gotham;
+    text-align: center;
+    padding: 24px;
+}
+.botao{
+    color: white;
+    font-family: Gotham;
+    text-align: center;
+    background-color: #9a0904;
+    border: none;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px; 
+    margin: 5px; 
+}
+.botao:hover{
+    background-color: white;
+    color: #9a0904;
+    transition: 1s; 
+}
+.barra{
+    width: 100%;
+    border-radius: 5px; 
+    border: none;
+    padding: 5px;
+}
+footer{
+    background-color: #13182a;
+    
+    
+}
+footer img{
+    max-width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5%;
+}
+
+@media only screen AND (min-width:480px){
+    body{
+        font-size: 100%;
+        height: 100vh;
+       
+    }
+    nav ul#menu li:not(:first-child){
+        display: block;
+    }
+    nav ul#menu li#icon{
+        display: none;
+    }
+    nav li{
+        box-sizing: border-box;
+        width: 25%;
+        float: left;
+    }
+    
+    .nome{
+        width: 25%;
+        float: left;
+    }
+    .email{
+        width: 30%;
+        float: left;
+    }
+    .senha{
+        width: 25%;
+        float: left; 
+    }
+    .dn{
+        width: 36.5%;
+        float: left; 
+        clear: both; 
+    }
+    .cpf{
+        width: 50%;
+        float: left; 
+    }
+    .cep{
+        width: 36.5%;
+        clear: both;
+        float: left; 
+    }
+    .rua{
+        width: 50%;
+        float: left; 
+    }
+    .bairro{
+        clear: both;
+        float: left;
+        width: 40%;
+    }
+    .cidade{
+        float: left;
+        width: 47%;
+    }
+    .uf{
+      clear: both;
+      width: 15%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #submit{
+        clear: both;
+    }
+    #reset{
+        clear: both;
+    }
+
+
+    
+}
+
+@media only screen AND (min-width:1024px){
+    body{
+        font-size: 100%;
+        height: 100vh;
+       
+    }
+    nav li{
+        box-sizing: border-box;
+        width: 25%;
+        float: left;
+    }
+    nav ul#menu li#icon{
+        display: none;
+    }
+    .nome{
+        width: 30%;
+        float: left;
+    }
+    .email{
+        width: 30%;
+        float: left;
+    }
+    .senha{
+        width: 25%;
+        float: left; 
+    }
+    .dn{
+        width: 40%;
+        float: left; 
+        clear: both; 
+    }
+    .cpf{
+        width: 50%;
+        float: left; 
+    }
+    .cep{
+        width: 40%;
+        clear: both;
+        float: left; 
+    }
+    .rua{
+        width: 50%;
+        float: left; 
+    }
+    .bairro{
+        clear: both;
+        float: left;
+        width: 43%;
+    }
+    .cidade{
+        float: left;
+        width: 47%;
+    }
+    .uf{
+      clear: both;
+      width: 15%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #submit{
+        clear: both;
+    }
+    #reset{
+        clear: both;
+    }
+
+
+    
+}
+@media only screen AND (min-width:1440px){
+    body{
+        font-size: 100%;
+        height: 100vh;
+       
+    }
+    nav li{
+        box-sizing: border-box;
+        width: 25%;
+        float: left;
+    }
+    nav ul#menu li#icon{
+        display: none;
+    }
+    .nome{
+        width: 30%;
+        float: left;
+    }
+    .email{
+        width: 30%;
+        float: left;
+    }
+    .senha{
+        width: 29%;
+        float: left; 
+    }
+    .dn{
+        width: 40%;
+        float: left; 
+        clear: both; 
+    }
+    .cpf{
+        width: 52.5%;
+        float: left; 
+    }
+    .cep{
+        width: 40%;
+        clear: both;
+        float: left; 
+    }
+    .rua{
+        width: 52.5%;
+        float: left; 
+    }
+    .bairro{
+        clear: both;
+        float: left;
+        width: 45.5%;
+    }
+    .cidade{
+        float: left;
+        width: 47%;
+    }
+    .uf{
+      clear: both;
+      width: 15%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #submit{
+        clear: both;
+    }
+    #reset{
+        clear: both;
+    }
+
+
+    
+}

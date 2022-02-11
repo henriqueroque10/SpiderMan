@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="CSS/estilo2.css" rel="stylesheet">
+</head>
+<body>
+    <header id="cabecalho">
+        <div id="head">
+            <img src="IMAGEM TAMANHOS CERTOS/logoSpider.png" alt="">
+        </div>
+    <div>
+        <nav id="menuHeader">
+            <ul id="menu" class="esconde">
+               
+                <li id="home"><a href="index.html#cabecalho">Home</a></li>
+                <li><a href="index.html#personagem">Personagem</a></li>
+                <li><a href="index.html#historia">Historia</a></li>
+                <li><a href="#formulario">Cadastro</a></li>  
+                <li id="icon"><a href="javascript:void(0)" id="kiwi">&#9776;</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div>
+<section id="formulario">
+    <form action="http://edupretel.com.br/html5_impacta/mensagem.php" method="post">
+        <h2>CADASTRO</h2>
+    
+            <p class="nome">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" class="barra" placeholder="Digite seu Nome" required>
+            </p>
+            <p class="email">
+                <label for="email">E-mail:</label>
+                <input type="text" name="email" id="email" class="barra" placeholder="Digite seu E-mail" required>
+            </p>
+            <p class="senha">
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha" class="barra" placeholder="Digite sua Senha" required>
+            </p>
+
+            <p class="dn">
+                <label for="nome">Data de Nascimento:</label>
+                <input type="date" name="data" id="data" class="barra">
+            </p>
+            <p class="cpf">
+                <label for="nome">CPF:</label>
+                <input type="text" class="barra"
+                name="cpf" 
+                id="cpf" 
+                
+                title="Digite o CPF no Formato 000.000.000-00"
+                pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" 
+                oninvalid="return alert('CPF Invalido')"
+                
+                placeholder="Digite o seu CPF" 
+                required>
+            </p>
+            
+            <div id="resposta">
+                <p class="cep">
+                    <label>CEP</label>
+                    <input type="text" class="barra" id="cep" placeholder="Digite sua CEP" >
+                    <input type="button" name="botao" class="botao" id="botao" value="Buscar">
+                </p>
+                <p class="rua">Rua: <input type="text" id="rua" class="barra"></p>
+                <p class="bairro">Bairro: <input type="text" id="bairro" class="barra"></p>
+                <p class="cidade">Cidade: <input type="text" id="cidade" class="barra"></p>
+                <p class="uf">UF: <input type="text" id="uf" class="barra" ></p>
+            </div>
+
+            <p>
+                <input type="hidden" name="recipient" id="recipient" value="henriqueroque10@gmail.com">
+                <input type="hidden" name="subject" id="subject" value="Teste de E-mail">
+            </p>
+        
+            <p>
+                <input type="submit" class="botao" id="submit" value="Cadastrar">
+                <input type="reset" class="botao" id="reset" value="Limpar">
+            </p>
+   </form>
+    
+</section>
+</div>
+<footer>
+    <img src="IMAGEM TAMANHOS CERTOS/Logo_Playstation.png">
+</footer>
+
+<script src="JS/jquery-3.1.1.js"></script>
+    <script src="JS/jquery-3.1.1.min.js"></script>
+    <script src="JS/js2.js"></script>
+
+</body>
+</html>

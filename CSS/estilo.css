@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 100%;
+    
+}
+img{
+    width: 100%;
+    height: auto;
+}
+#cabecalho{
+    background-color: #1a1f34;
+    
+}
+.menu-fixo{
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    transition: all .5s;
+    width: 100%;
+}
+#cabecalho img{
+    max-width: 234px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5%;
+}
+nav li{
+    list-style-type: none;
+    background-color: #9a0904;
+    text-align: center;
+    line-height: 30px;
+}
+
+nav ul{
+    position: relative;
+}
+li#home{
+   
+position: relative;
+    
+}
+li#icon{
+    display:inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 10%;
+    /*width: 100%;*/
+}
+nav ul.esconde li:not(:first-child){
+    display: none;
+}
+nav ul.mostra li:not(:first-child){
+    display: block;
+}
+
+nav li a, a{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .94rem;
+    text-decoration: none;
+    display: block;
+}
+nav li a:hover{
+    color:#9a0904;
+    background-color: white;
+    transition: 1s; 
+}
+
+#coluna1, #coluna2, #coluna3{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    margin-bottom: 1.4rem;
+    background-color: #1a1f34;
+    align-items: center;
+    padding: 1em;
+}
+#personagem div img{
+    width: 100%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    
+   
+ 
+}
+#personagem #titulo{
+    margin: 2%;
+    font-size: 1.69rem;
+    color: #9a0904;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+#personagem h2 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 2%;
+}
+#personagem p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 4%;
+    margin-bottom: 4%;
+    font-size: 12pt;
+}
+#historia{
+    height: auto;
+    background-color: #1a1f34;
+    background-image: url('Fundo.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+    background-size: 40em;
+    
+}
+#historia h2{
+   
+    padding-top: 10%;
+    padding-bottom: 2%;
+    font-size: 1.69rem;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center; 
+}
+#historia p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-bottom: 10%;
+    font-size: 14pt;
+    
+}
+footer{
+    background-color: #13182a;
+    
+}
+footer img{
+    max-width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5%;
+}
+@media only screen AND (min-width:480px){
+    nav li{
+        box-sizing: border-box;
+        width: 25%;
+        float: left;
+    }
+    nav ul#menu li#icon{
+        display: none;
+    }
+    #coluna1{
+        width: 26%;
+        margin-right: 6%;
+        margin-left: 4%;
+        float: left;
+        
+    }
+
+    #coluna2{
+        width: 26%;
+        float: left;
+        margin-right: 6%;
+    }
+
+    #coluna3{
+        width: 26%;
+        margin-right: 6%;
+        float: left;
+        clear: none;
+    }
+    #historia{
+        clear: both;
+    }
+    nav ul#menu li:not(:first-child){
+        display: block;
+    }
+    nav ul#menu li#icon{
+        display: none;
+    }
+   
+}
+    
+    
